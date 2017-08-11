@@ -12,7 +12,8 @@ RUN apt-get update && \
     apt-get install -y \
         xsltproc libxml2-utils libxml2 texlive fonts-inconsolata make nginx \
         curl python python-pip texlive-xetex texlive-fonts-recommended \
-        texlive-fonts-extra
+        texlive-fonts-extra && \
+    rm -rf /var/lib/apt/lists/*
 RUN curl https://pilotfiber.dl.sourceforge.net/project/getfo/texml/texml-2.0.2/texml-2.0.2.tar.gz -o texml-2.0.2.tar.gz && \
     tar -xf texml-2.0.2.tar.gz && \
     pip install texml-2.0.2/ && \
