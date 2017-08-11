@@ -8,7 +8,6 @@ MAINTAINER XSF Editors <editor@xmpp.org>
 ENV DEBIAN_FRONTEND noninteractive
 
 RUN apt-get update && \
-    apt-get -y dist-upgrade && \
     apt-get install -y \
         xsltproc libxml2-utils libxml2 texlive fonts-inconsolata make nginx \
         curl python python-pip texlive-xetex texlive-fonts-recommended \
