@@ -18,4 +18,6 @@ RUN curl https://pilotfiber.dl.sourceforge.net/project/getfo/texml/texml-2.0.2/t
     pip install texml-2.0.2/ && \
     rm -rf texml-2.0.2
 
+COPY default.conf /etc/nginx/sites-available/default
+
 RUN mkdir -p /src/resources /var/www/html/extensions
