@@ -1,0 +1,29 @@
+<TeXML>
+One line.
+
+Second line.
+
+Third line.
+
+
+
+
+
+All previous lines
+should belong to one paragraph.
+
+Now lines are filled by spaces:
+One line.
+	  
+Second line.
+    	
+Third line.
+ 
+  
+   
+    
+     
+All previous lines
+should belong to one paragraph.
+
+</TeXML>

@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<TeXML>
+  <cmd name="documentclass">
+    <opt>a4paper,12pt</opt>
+    <parm>article</parm>
+  </cmd>
+  <env name="document">
+    <cmd name="author" nl2="1">
+      <parm>A. U. Thor</parm>
+    </cmd>
+    <cmd name="title" nl2="1">
+      <parm>A SHORT STORY</parm>
+    </cmd>
+    <cmd name="maketitle" nl2="1" gr="0"/>
+    <cmd name="section*" nl2="1">
+      <parm>A SHORT STORY</parm>
+    </cmd>
+    <TeXML>Once upon a time, in a distant galaxy called
+       &#xD6;&#xF6;&#xE7;, there lived a computer
+       named R.&#xA0;J. Drofnats.<cmd name="par" nl2="1" gr="0"/></TeXML>
+    <TeXML>Mr.&#xA0;Droftnats&#x2014;or
+       <cmd name="lq"/><cmd name="lq"/>R.J.,<cmd name="rq"/><cmd name="rq"/> as he
+       preferred to be called&#x2014;was happiest
+       when he was at work typesetting beautiful
+       documents.<cmd name="par" nl2="1" gr="0"/></TeXML>
+    <cmd name="bigskip" gr="0" nl2="1"/>
+    <cmd name="hrule" gr="0" nl2="1"/>
+  </env>
+</TeXML>

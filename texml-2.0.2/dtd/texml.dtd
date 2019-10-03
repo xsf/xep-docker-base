@@ -1,0 +1,72 @@
+<!ENTITY % nomath  "#PCDATA|TeXML|cmd|env|group|ctrl|spec|pdf">
+
+<!ENTITY % content "%nomath;|math|dmath">
+
+<!ELEMENT TeXML  (%content;)*>
+
+<!ATTLIST TeXML
+  mode        (text|math)  #IMPLIED
+  escape      (0|1)        #IMPLIED
+  emptylines  (0|1)        #IMPLIED
+  ligatures   (0|1)        #IMPLIED
+  ws          (0|1)        #IMPLIED
+>
+
+<!ELEMENT env    (%content;|opt|parm)*>
+
+<!ATTLIST env
+  name    CDATA  #REQUIRED
+  begin   CDATA  #IMPLIED
+  end     CDATA  #IMPLIED
+  start   CDATA  #IMPLIED
+  stop    CDATA  #IMPLIED
+  nl1     (0|1)  #IMPLIED
+  nl2     (0|1)  #IMPLIED
+  nl3     (0|1)  #IMPLIED
+  nl4     (0|1)  #IMPLIED
+
+>
+
+<!ELEMENT group  (%content;)*>
+
+<!ELEMENT math   (%nomath;)*>
+
+<!ELEMENT dmath  (%nomath;)*>
+
+<!ELEMENT cmd    (opt|parm)*>
+
+<!ATTLIST cmd
+  name    CDATA  #REQUIRED
+  nl1     (0|1)  #IMPLIED
+  nl2     (0|1)  #IMPLIED
+  gr      (0|1)  #IMPLIED
+>
+
+<!ENTITY % inopt "%content;">
+
+<!ELEMENT opt    (%inopt;)*>
+
+<!ELEMENT parm   (%inopt;)*>
+
+<!ELEMENT ctrl   EMPTY>
+
+<!ATTLIST ctrl
+  ch      CDATA  #REQUIRED
+>
+
+<!ELEMENT spec   EMPTY>
+
+<!ELEMENT pdf    (#PCDATA)>
+
+<!--
+; Should be so:
+; 
+; <!ATTLIST spec
+;   cat (esc|bg|eg|mshift|align|parm|sup|sub|tilde|comment|vert|lt|gt|nl|nl?|space|nil) #REQUIRED
+; >
+;
+; but 'nl?' is not valid in NmToken. So I use CDATA
+-->
+<!ATTLIST spec
+  cat     CDATA  #REQUIRED
+>

@@ -1,0 +1,7 @@
+\enableregime[utf] \setuppagenumbering[state=stop]
+\starttext
+Wie schön!
+\stoptext
+\xstartfake[opt1]{par1}[opt2]{par2}
+Wie schön!
+\xstopfake

@@ -1,0 +1,18 @@
+Use \it{} italic
+	or
+\bf{} bold
+	or \tt{} tt.
+Again:
+	Use \it{} italic
+	or \bf{}
+bold
+	or \tt{} tt.
+Finally:
+x \y{} z
+x \y{}
+z
+x
+\y{} z
+x
+\y{}
+z

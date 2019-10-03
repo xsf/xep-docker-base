@@ -1,0 +1,19 @@
+x
+\begin{y}
+?
+\end{y}
+z x
+\begin{y}
+?
+\end{y}
+z x \begin{y}?\end{y} z x
+\begin{y}?\end{y} z
+	x \begin{y}
+?\end{y} z
+	x \begin{y}?
+\end{y} z
+	x \begin{y}?\end{y}
+z
+\begin{foo}[options1]{parameters1}[options2]{parameters2}[options3]{parameters3}[options4]
+text...
+\end{foo}

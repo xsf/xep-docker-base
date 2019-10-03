@@ -1,0 +1,22 @@
+pre, tt, code {
+  color:            #000000;
+  background-color: #f0f0f0;
+}
+em {
+  background-color: #c0c0ff;
+}
+.footnote {
+  font-size:        66%;
+}
+
+/* syntax highlighting in listings */
+.synComment    { color: #0000FF }
+.synConstant   { color: #FF00FF }
+.synIdentifier { color: #008B8B }
+.synStatement  { color: #A52A2A ; font-weight: bold }
+.synPreProc    { color: #A020F0 }
+.synType       { color: #2E8B57 ; font-weight: bold }
+.synSpecial    { color: #6A5ACD }
+.synUnderlined { color: #000000 ; text-decoration: underline }
+.synError      { color: #FFFFFF ; background: #FF0000 none }
+.synTodo       { color: #0000FF ; background: #FFFF00 none }

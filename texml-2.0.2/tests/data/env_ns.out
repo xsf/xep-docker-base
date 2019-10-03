@@ -1,0 +1,12 @@
+\begin{document}
+text
+\s{st}
+ET phone home!
+\e{st}
+text
+\begin{test} Test whitespaces in an environment
+\end{test}
+\begin{test}{a}[b]
+*{c} Test extended environment[Incorrect, but interesting. Also see '*' above]
+\end{test}
+\end{document}

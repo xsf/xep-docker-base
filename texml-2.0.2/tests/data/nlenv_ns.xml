@@ -1,0 +1,24 @@
+<TeXML xmlns="http://getfo.sourceforge.net/texml/ns1">
+	<!-- Default is nlX=1 -->
+	x <env name="y">?</env> z
+	<!-- Explicit nlX=1 --><spec cat="nil"/>
+	x <env name="y" nl1="1" nl2="1" nl3="1" nl4="1">?</env> z
+	<!-- No newlines at all --><spec cat="nil"/>
+	x <env name="y" nl1="0" nl2="0" nl3="0" nl4="0">?</env> z
+	<!-- Check each attribute --><spec cat="nil"/>
+	x <env name="y" nl1="1" nl2="0" nl3="0" nl4="0">?</env> z
+	x <env name="y" nl1="0" nl2="1" nl3="0" nl4="0">?</env> z
+	x <env name="y" nl1="0" nl2="0" nl3="1" nl4="0">?</env> z
+	x <env name="y" nl1="0" nl2="0" nl3="0" nl4="1">?</env> z
+	<!-- Extended environments -->
+	<env name="foo">
+	<opt>options1</opt>
+	<parm>parameters1</parm>
+	<opt>options2</opt>
+	<parm>parameters2</parm>
+	<opt>options3</opt>
+	<parm>parameters3</parm>
+	<opt>options4</opt>
+	text...
+</env>
+</TeXML>

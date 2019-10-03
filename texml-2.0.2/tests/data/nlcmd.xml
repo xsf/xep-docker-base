@@ -1,0 +1,14 @@
+<TeXML>
+	Use <cmd name="it"/> italic
+	or <cmd name="bf" nl1="1"/> bold
+	or <cmd name="tt" nl1="0"/> tt.
+Again:
+	Use <cmd name="it"/> italic
+	or <cmd name="bf" nl2="1"/> bold
+	or <cmd name="tt" nl2="0"/> tt.
+Finally:
+x <cmd name="y" nl1="0" nl2="0"/> z
+x <cmd name="y" nl1="0" nl2="1"/> z
+x <cmd name="y" nl1="1" nl2="0"/> z
+x <cmd name="y" nl1="1" nl2="1"/> z
+</TeXML>

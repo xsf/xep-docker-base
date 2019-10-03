@@ -13,11 +13,9 @@ RUN apt-get update && \
         curl python python-pip texlive-xetex texlive-fonts-recommended \
         texlive-fonts-extra lmodern python3 && \
     rm -rf /var/lib/apt/lists/*
-RUN curl https://pilotfiber.dl.sourceforge.net/project/getfo/texml/texml-2.0.2/texml-2.0.2.tar.gz -o texml-2.0.2.tar.gz && \
-    tar -xf texml-2.0.2.tar.gz && \
-    pip install texml-2.0.2/ && \
-    rm -rf texml-2.0.2
 
-COPY default.conf /etc/nginx/sites-available/default
+COPY texml-2.0.2 /src/texml-2.0.2
+
+RUN pip install /src/texml-2.0.2 && rm -rf /src/texml-2.0.2
 
 RUN mkdir -p /src/resources /var/www/html/extensions

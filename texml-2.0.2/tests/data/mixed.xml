@@ -1,0 +1,26 @@
+<TeXML>
+In |text| mode.
+<TeXML>Still in |text| mode</TeXML>
+<TeXML mode="math">
+In |math| mode: |&#x302;.
+<TeXML mode="text">In |text| mode inside math mode</TeXML>
+<TeXML>Still in |math| mode</TeXML>
+</TeXML>
+In |text| mode: |&#x302;.
+The symbol can be only in math: &#x27F5;
+<math>a&lt;b</math> <dmath>c&gt;d</dmath><spec cat="nl"/>
+<dmath>
+unicode mapping in math mode:
+in text:  &#xa1;
+in mixed: &#xE2;
+in math:  &#x27F5;
+none:     &#x777;
+</dmath><spec cat="nl"/>
+<TeXML>
+unicode mapping in text mode:
+in text:  &#xa1;
+in mixed: &#xE2;
+in math:  &#x27F5;
+none:     &#x777;
+</TeXML>
+</TeXML>

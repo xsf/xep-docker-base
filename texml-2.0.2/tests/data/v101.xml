@@ -1,0 +1,15 @@
+<TeXML>
+  <cmd name="section">
+    <parm>Milton's
+      <group>
+        <cmd name="it"/>
+        Paradise Lost
+      </group>
+    </parm>
+  </cmd>
+  <env name="tabular" nl2="0">
+    <opt>t</opt>
+    <parm>r<spec cat="vert"/>c<spec cat="vert"/>l</parm>
+    ... table goes here ...
+  </env>
+</TeXML>

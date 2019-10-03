@@ -1,0 +1,34 @@
+<TeXML ws="1">Commented-out:
+
+
+<TeXML emptylines="1">Empty:
+
+
+<TeXML>More empty:
+
+
+<TeXML emptylines="0">Again commented-out:
+
+
+<TeXML>More commented:
+
+
+</TeXML>
+
+
+</TeXML>
+
+
+</TeXML>
+
+
+</TeXML>
+
+<TeXML ws="0">
+x
+<spec cat="nl"/>
+<spec cat="nl"/>
+<spec cat="nl"/>
+x
+</TeXML>
+</TeXML>

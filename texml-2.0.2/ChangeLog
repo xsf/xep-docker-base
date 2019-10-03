@@ -1,0 +1,255 @@
+2011-01-19  Oleg Parashchenko  olpa@users.sourceforge.net
+
+* Texml/handler.py: wrapper around strip() to support very
+old python version
+* scripts/texml.py: version number is changed to 2.0.2.
+
+2006-07-20  Oleg Parashchenko  olpa@users.sourceforge.net
+
+* Texml/texml.py: try to write a symbol in the ^^XX form first,
+and only then consult the rewriting maps. Otherwise combination
+of --encoding and --ascii gives undesired result.
+* scripts/texml.py: version number is changed to 2.0.1.
+
+
+2006-07-10  Oleg Parashchenko  olpa@users.sourceforge.net
+
+* TeXML 2.0.0 release.
+
+
+2006-06-14  Oleg Parashchenko  olpa@users.sourceforge.net
+
+* Texml/handler.py: one raise was incorrectly commented-out.
+* scripts/texml.py: version number is changed to 2.0.0.beta1.
+* scripts/texml.py: the first line now is just "#!python", the
+path is to be corrected by distutils.
+
+
+2006-06-02  Oleg Parashchenko  olpa@users.sourceforge.net
+
+* Texml/specmap.py: mapping for the non-breaking hyphen,
+as suggested by Paul Tremblay.
+
+
+2006-06-01  Oleg Parashchenko  olpa@users.sourceforge.net
+
+* Texml/specmap.py: "|" is now "\textbar".
+
+
+2005-10-03  Oleg Parashchenko  olpa@users.sourceforge.net
+
+* scripts/texml/texml.py: First line now is "#!python".
+* scripts/texml: New file.
+* scripts/texml_local: Old content of PYTHONPATH is retained.
+* tests/data/quick/Makefile: Switched from using "texml.py" to
+using "texml_local".
+* setup.py: Version string is extracted from "scripts/texml.py".
+* MANIFEST.in: HTML and text documentation is added.
+* README: typo is fixed.
+
+
+2005-09-26  Oleg Parashchenko  olpa@users.sourceforge.net
+
+* texml.py: Version number is updated: 1.29.devel.
+* texml.py: Default width now is 62 symbols.
+* texmlwr.py: If symbol couldn't be translated to an encoding,
+  command "\unicodechar" is written instead of an #&xNNN; entity.
+
+
+2005-09-07  Oleg Parashchenko  olpa@users.sourceforge.net
+
+* texml.py: Version number is updated: 1.28.devel.
+* dtd/texml.dtd: Element "pdf" is added.
+* handler.py, texmlwr.py: Support of the element "pdf".
+* data/pdfstring.xml, data/pdfstring.out, faildata/pdfstring.xml,
+  faildata/pdfstring.grep, test/readme: Tests for the "pdf" element.
+* handler.py: doesn't print error on it's own. Instead, returns the
+  text to the caller, and caller should print the message.
+  The function "__print_error" is deleted. The format "prefix:\n"
+  is changed to "prefix: ".
+* unimap.py: no more "&lt;" and "&gt;" instead of "<" and ">".
+  Thanks Felix Wiemann for reporting the bug.
+  http://sourceforge.net/mailarchive/forum.php?thread_id=7467879&forum_id=44318
+
+
+Version 1.27.devel (20 June 2005)
+
+* New feature: "--ascii" parameter. Now it's possible to
+  generate plain ASCII TeX files in a desired encoding.
+  Non-ascii bytes are encoded as "^^XX".
+  The test file "chinese1.xml" is a working example of
+  a Chinese LaTeX file.
+
+* TeXML issues a warning is an XML symbol isn't converted to
+  TeX and printed as '&#xNNN;'
+
+* Refactoring. Code for tuning output stream is moved from
+  "handler.py" to "texmlwr.py".
+
+
+Version 1.26.devel (8 May 2005)
+
+* Bug is fixed. Now lines which consist of space characters and
+  tabulation characters are also regarded as blank lines.
+
+
+Version 1.25.devel (4 April 2005)
+
+* Script texml_con
+  This script can directly convert a texml 
+  document to a print document such as PDF.
+
+* External entities now handled
+  A small bug in handler.py prevented external 
+  entties from being read. External entities
+  can now be read.
+
+
+Version 1.24.devel (21 March 2005)
+
+* TeXML is now namespace aware
+  will process documents with the namespace 
+  http://getfo.sourceforge.net/texml/ns1
+
+  will also process documents with no namespace
+
+* TeXML is installed the standard way
+  libraries are created in the python path;
+  scripts are automatically installed in the path
+
+* Error handling
+  
+  exceptions are now classes rather than strings. 
+  This allows for better handling of exceptions.
+
+  Column and line numbers are now outputed as part 
+  of the error messages when an exception is raised.
+
+  exceptions for invalid or ill-formed XML are now
+  handled in the script. Instead of a long message
+  (incomprehensible to non-python developers), the
+  error message consists of a column number, a line
+  number, and a simple explanation. 
+  
+
+Version 1.23.devel (5 March 2005)
+
+* ConTeXt mode is now enabled through command line instead of
+  using the environment variable.
+
+
+Version 1.22.devel (21 February 2005)
+
+* Support of ConTeXt environments (\startenv ... \stopenv)
+  Thanks to Paul Tremblay for the patch. More details:
+  http://sourceforge.net/tracker/index.php?func=detail&aid=1145206&group_id=102261&atid=631462
+  http://sourceforge.net/forum/message.php?msg_id=3007157
+
+
+Version 1.21.devel (18 February 2005)
+
+* TeXML now should work under Python 2.2.1.
+  Thanks to Paul Tremblay for the bug report and the fix suggestion:
+  http://sourceforge.net/tracker/index.php?func=detail&aid=1123627&group_id=102261&atid=631460
+
+
+Version 1.20 (12 November 2004)
+
+* Jason Santos <jason.santos@megaslow.net> has proofread the documentation.
+* Corrected DTD: attribute spec/@cat now allows the value "nl?".
+
+
+Version 1.15.devel (17 August 2004)
+
+* New category of special items: conditional newline.
+
+
+Version 1.12.devel (09 August 2004)
+
+* New document: Thesis of the talk at the First International
+  Conference of Open-Source Developers.
+* Names of distribution packages now contain suffixes '-windows'
+  and '-unix' to reflect a difference in line endings.
+
+
+Version 1.09.devel (08 July 2004)
+
+* Environments and groups are now allowed in parameters.
+* Whitespace processing in environments is reworked. Now @nl2
+  attribute of <env/> regards possible <opt/> and <parm/>.
+* Empty line, produced by <spec cat="nl"/>, is no longer being
+  commented out.
+
+
+Version 1.08.devel (29 June 2004)
+
+* Advanced whitespace processing now implemented: the program
+  (a) removes what XML regards as insignificant whitespace, and
+  (b) introduces its own whitespace which would look reasonable
+      from a human point of view.
+* A new attribute @ws of the element <TeXML/> is responsible for
+  switching advanced whitespace processing on and off.
+* New attributes of <cmd/>: @nl1 and @nl2, new attributes of
+  <env/>: @nl1, @nl2, @nl3 and @nl4. They are responsible for
+  creation of new lines.
+* New <spec/> symbols: new line, whitespace and nothing.
+* Whitespace after commands is now significant, so the program
+  adds '{}' after a command. This behaviour is configurable.
+* A new command-line paramater '-w' (or '--width') specifies
+  minimal width of lines that are subject to automatic line
+  breaks.
+* Translation of special characters is now more LaTeXish.
+  For example, the symbol '<' is now translated into '\textless'
+  instead of '$<$'.
+* Replacements for special symbols now have '{}' characters at
+  the endings instead of a space.
+* Accurate handling of unicode mappings that can appear only in
+  text or in math modes.
+* License is changed from the GPL to the Lesser GPL.
+* Improved documentation, added a quick start document.
+
+
+Version 1.01.devel (06 May 2004)
+
+* Added version number output.
+* The program now deletes leading spaces in <env/>.
+* Element <env/> now supports sub-elements <opt/> and <parm/>.
+  Elements <parm/> and <opt/> now support sub-element <group/>.
+  Thanks to Stephen Robertson for his request for improvements.
+
+
+Version 1.00 (09 April 2004)
+
+* More ligatures are being processed: ``, '', ?`, !`. With -- and ---
+  they cover all default non-letter TeX ligatures.
+* Simon Goodson is proofreading the documentation.
+
+
+Version 0.98.beta (02 April 2004)
+
+* Text of specification is now better. Thanks Simon Goodson for
+  ideas on improvement.
+* New handling of tags <parm/> and <opt/>. The processor now outputs
+  them instantly as they appear, and so multiple parameters of one
+  <cmd/> are not being united.
+* Absence of spaces after LaTeX commands in some mappings is fixed.
+
+
+Version 0.95.beta (26 March 2004)
+
+* Ligatures "--" and "---" are being processed. This is configurable.
+* Escaping of TeX specials is configurable.
+* Translation of empty line is configurable.
+* Default encoding of output now is ascii, not utf8.
+* ChangeLog file is created.
+
+
+Version 0.91.beta (22 March 2004)
+
+* Under Windows, TeXML processor now creates lines with DOS endings.
+  Code should also work correctly in other systems (MacOS etc).
+
+
+Version 0.90.beta (19 March 2004)
+
+* First packaged version of the TeXML.

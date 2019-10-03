@@ -1,0 +1,15 @@
+In \textbar{}text\textbar{} mode. Still in \textbar{}text\textbar{} mode
+In |math| mode: |\hat{}. In \textbar{}text\textbar{} mode inside math mode
+Still in |math| mode In \textbar{}text\textbar{} mode: \textbar{}\^.
+The symbol can be only in math: \ensuremath{\longleftarrow{}} $a<b$
+$$c>d$$
+$$ unicode mapping in math mode:
+in text:  \ensuretext{\textexclamdown{}}
+in mixed: \hat{a}
+in math:  \longleftarrow{}
+none:     \unicodechar{1911} $$
+unicode mapping in text mode:
+in text:  \textexclamdown{}
+in mixed: \^{a}
+in math:  \ensuremath{\longleftarrow{}}
+none:     \unicodechar{1911}

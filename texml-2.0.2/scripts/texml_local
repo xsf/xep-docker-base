@@ -1,0 +1,9 @@
+#!/bin/sh
+
+DIR=`dirname $0`
+
+PYTHONPATH=$DIR/..:$PYTHONPATH
+export PYTHONPATH
+
+python $DIR/texml.py "$@"
+

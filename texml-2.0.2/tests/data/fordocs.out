@@ -1,0 +1,77 @@
+\documentclass[12pt]{letter}
+\begin{=================}\end{=================}
+\textbackslash{}section\{No~break\}
+\begin{=================}\end{=================}
+\cyrchar\CYRT{}\cyrchar\cyre{}\cyrchar\CYRH{}
+\begin{=================}\end{=================}
+\documentclass[12pt]{letter}
+\begin{=================}\end{=================}
+... Visit \href{TeXML homepage}{http://getfo.org/texml/} ...
+\begin{=================}\end{=================}
+... \item{}first \item{}second
+\item{}third
+\item{}
+fourth ...
+\begin{=================}\end{=================}
+\it{} once, \it twice
+\begin{=================}\end{=================}
+\begin{document}
+...
+\end{document}
+\begin{=================}\end{=================}
+\start{list}
+...
+\finish{list}
+\begin{=================}\end{=================}
+... one
+\begin{fake}
+env
+\end{fake}
+, another \begin{fake}env\end{fake}, etc.
+\begin{=================}\end{=================}
+{\it italics}
+\begin{=================}\end{=================}
+$a+b$ $$\sqrt{2}$$
+\begin{=================}\end{=================}
+\ 
+\begin{=================}\end{=================}
+{\it italics}
+\begin{=================}\end{=================}
+\textdollar{}a \textbackslash{}/\textbackslash{}/ \textdollar{}b
+\begin{=================}\end{=================}
+\def \textvert{$|$}
+\begin{=================}\end{=================}
+\textexclamdown{} \ensuremath{\longleftarrow{}}
+$\ensuretext{\textexclamdown{}} \longleftarrow{}$
+\begin{=================}\end{=================}
+\def \ensuretext{\textrm }
+\begin{=================}\end{=================}
+-{}-, -{}-{}-, `{}`, '{}', !{}` and ?{}`
+\begin{=================}\end{=================}
+$a \/\/ $b
+\begin{=================}\end{=================}
+text mode here: \textbar{}\^ math mode here: |\hat{} text in math in text: \textbar{}\^
+again math mode: |\hat{} again text mode: \textbar{}\^
+\begin{=================}\end{=================}
+{ \it{} text }
+  {
+    \it{} text
+  }
+\begin{=================}\end{=================}
+... here.
+More, ...
+\begin{=================}\end{=================}
+One line
+  Another line
+Last line
+\begin{=================}\end{=================}
+line
+line
+also line
+\begin{=================}\end{=================}
+two nl:  [
+
+]
+two nl?: [
+]
+\begin{=================}\end{=================}

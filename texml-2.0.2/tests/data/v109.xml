@@ -1,0 +1,56 @@
+<TeXML>
+<!-- no more these restrictions -->
+
+<!--
+With an environment with options and parameters and text, I would
+normally format Latex something like this:
+	\begin{foo}[options]{parameters}
+	text...
+	\end{foo}
+You have given me a mechanism to remove the nl you put in after
+\begin{foo}, but not to introduce a new one after the {parameters}.
+-->
+<env name="foo">
+	<opt>options</opt>
+	<parm>parameters</parm>
+	text...
+</env>
+<spec cat="nl"/>
+<spec cat="nl"/>
+
+<!--
+I would tend to leave a blank line between major blocks.  Only
+possible now if there are commands both at the end of the first and at
+the beginning of the second.
+-->
+<TeXML>x</TeXML><spec cat="nl"/><spec cat="nl"/><TeXML>x</TeXML>
+<spec cat="nl"/>
+<spec cat="nl"/>
+<spec cat="nl"/>
+
+<!--
+suppress the {}, different syntax
+\setlength{\parindent}{0pt}
+\parindent=0pt
+-->
+<cmd name="setlength" nl2="1">
+	<parm><cmd name="parindent" gr="0"/></parm>
+	<parm>0pt</parm>
+</cmd>
+<cmd name="parindent" gr="0"/>=0pt
+<spec cat="nl"/>
+<spec cat="nl"/>
+<spec cat="nl"/>
+
+<!--
+dtd forbids:
+* an env inside a parm
+* groups within cmds (== parm)
+-->
+<cmd name="foo">
+	<parm>
+		<env name="bar"/>
+	</parm>
+</cmd>
+
+</TeXML>

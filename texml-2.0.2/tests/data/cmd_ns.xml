@@ -1,0 +1,37 @@
+<TeXML xmlns="http://getfo.sourceforge.net/texml/ns1">
+<cmd name="documentclass">
+  <opt>12pt</opt>
+  <parm>letter</parm>
+</cmd>
+<cmd name="par"/>
+<TeXML/>
+<cmd name="o">
+	<opt>o1</opt>
+</cmd>
+<cmd name="p">
+	<parm>p1</parm>
+</cmd>
+<cmd name="op">
+	<opt>o1</opt>
+	<parm>p1</parm>
+	<opt>o2</opt>
+	<parm>p2</parm>
+</cmd>
+<cmd name="unusual">
+	<parm>a<ctrl ch=" "/>a</parm>
+	<opt>b<spec cat="esc"/>b</opt>
+</cmd>
+<cmd name="def" gr="0"/><cmd name="textvert"><parm><math>|</math></parm></cmd>
+<group><cmd name="it"/>italics</group>
+<cmd name="par" nl2="1"/>par
+<cmd name="par" nl2="1"/> par
+<!-- breaking on WS after command name --><spec cat="nil"/>
+<cmd name="aaaaaaaaaa" gr="0" nl1="1"/>
+<cmd name="aaaaaaaaaa" gr="0"/>
+<cmd name="aaaaaaaaaa" gr="0"/>
+<cmd name="aaaaaaaaaa" gr="0"/>
+<cmd name="aaaaaaaaaa" gr="0"/>
+<cmd name="aaaaaaaaaa" gr="0" nl2="1"/>
+<!-- a sample for docs --><spec cat="nil"/>
+<cmd name="it"/> once, <cmd name="it" gr="0"/> twice
+</TeXML>

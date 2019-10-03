@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: texml
+Version: 2.0.2
+Summary: Convert TeXML to LaTeX or ConTeXt
+Home-page: http://getfo.org/texml/
+Author: Oleg Parashchenko, Paul Tremblay
+Author-email: olpa@ http://uucode.com/
+License: MIT
+Description: TeXML is an XML syntax for TeX. The processor transforms the TeXML markup into the TeX markup, escaping special and out-of-encoding characters. The intended audience is developers who automatically generate [La]TeX or ConTeXt files.
+Platform: UNKNOWN

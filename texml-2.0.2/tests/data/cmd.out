@@ -1,0 +1,6 @@
+\documentclass[12pt]{letter} \par{} \o[o1] \p{p1} \op[o1]{p1}[o2]{p2}
+\unusual{a\ a}[b\b] \def \textvert{$|$} {\it{}italics} \par{}
+par \par{}
+par
+\aaaaaaaaaa \aaaaaaaaaa \aaaaaaaaaa \aaaaaaaaaa \aaaaaaaaaa \aaaaaaaaaa
+\it{} once, \it twice

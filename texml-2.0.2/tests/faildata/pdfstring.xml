@@ -1,0 +1,4 @@
+<!-- "pdfstring" contains only text -->
+<TeXML>
+  <pdf>aaa<TeXML/>bbb</pdf>
+</TeXML>
