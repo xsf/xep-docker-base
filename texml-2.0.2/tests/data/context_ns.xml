@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<TeXML xmlns="http://getfo.sourceforge.net/texml/ns1">
+ <cmd name="enableregime">
+  <opt>utf</opt>
+ </cmd>
+ <cmd name="setuppagenumbering">
+  <opt>state=stop</opt>
+ </cmd>
+ <env name="text">
+  <TeXML>Wie schön!</TeXML>
+ </env>
+ <env name="fake" start="xstart" stop="xstop">
+  <opt>opt1</opt>
+  <parm>par1</parm>
+  <opt>opt2</opt>
+  <parm>par2</parm>
+  Wie schön!
+ </env>
+</TeXML>

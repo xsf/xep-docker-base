@@ -1,0 +1,23 @@
+<TeXML>
+	<cmd name="documentclass" nl2="1">
+		<parm>article</parm>
+	</cmd>
+	<cmd name="usepackage" nl2="1">
+		<opt>encapsulated</opt>
+		<parm>CJK</parm>
+	</cmd>
+	<cmd name="usepackage" nl2="1">
+    <parm>ucs</parm>
+  </cmd>
+	<cmd name="usepackage" nl2="1">
+		<opt>utf8x</opt>
+		<parm>inputenc</parm>
+	</cmd>
+	<env name="document">
+		<env name="CJK">
+			<parm>UTF8</parm>
+			<parm>cyberbit</parm>
+			&#x4E16;&#x754C;&#xFF0C;&#x4F60;&#x597D;&#xFF01;
+		</env>
+	</env>
+</TeXML>

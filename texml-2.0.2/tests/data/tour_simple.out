@@ -1,0 +1,7 @@
+\documentclass[a4paper]{article}
+\usepackage[latin1]{inputenc}
+\usepackage[T1]{fontenc}
+\begin{document}
+I'm not afraid of the symbols
+\textdollar{}, \^{}, \textgreater{} and others.
+\end{document}

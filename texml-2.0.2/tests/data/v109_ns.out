@@ -1,0 +1,18 @@
+\begin{foo}[options]{parameters}
+text...
+\end{foo}
+
+
+x
+
+x
+
+
+\setlength{\parindent }{0pt}
+\parindent =0pt
+
+
+\foo{
+\begin{bar}
+\end{bar}
+}

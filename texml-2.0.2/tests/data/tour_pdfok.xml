@@ -1,0 +1,20 @@
+<TeXML>
+<TeXML escape="0">
+\documentclass{article}
+\usepackage[T2A]{fontenc}
+\usepackage[koi8-r]{inputenc}
+\usepackage[unicode]{hyperref}
+</TeXML>
+<env name="document">
+  <cmd name="section">
+    <opt>
+      <cmd name="texorpdfstring">
+        <parm>Заголовок (Title)</parm>
+        <parm><pdf>Заголовок (Title)</pdf></parm>
+      </cmd>
+    </opt>
+    <parm>Заголовок (Title)</parm>
+  </cmd>
+  Текст (Text)
+</env>
+</TeXML>

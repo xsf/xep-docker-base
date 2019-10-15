@@ -1,0 +1,11 @@
+[spaces eliminated]
+		[ws around]
+		%
+			[more ws around]
+			%
+				[ws still around]
+				 [and now no ws] [again ws]
+					%
+			%
+		%
+	%

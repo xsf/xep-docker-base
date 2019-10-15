@@ -1,0 +1,21 @@
+<TeXML>
+
+	[spaces eliminated]
+
+	<TeXML ws="1">
+		[ws around]
+		<TeXML ws="1">
+			[more ws around]
+			<TeXML>
+				[ws still around]
+				<TeXML ws="0">
+					[and now no ws]
+					<TeXML ws="1"><TeXML>[again ws]
+					</TeXML></TeXML>
+				</TeXML>
+			</TeXML>
+		</TeXML>
+	</TeXML>
+
+	
+</TeXML>

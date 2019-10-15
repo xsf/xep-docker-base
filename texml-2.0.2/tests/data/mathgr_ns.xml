@@ -1,0 +1,5 @@
+<TeXML>Text: |a+b|>2
+<math>|a+b|>3</math>
+<dmath>|a+b|>4</dmath>
+<dmath><cmd name="sqrt"><parm>2</parm></cmd></dmath>
+</TeXML>

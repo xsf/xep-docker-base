@@ -1,0 +1,10 @@
+<TeXML>
+  <cmd name="documentclass">
+    <opt>a4paper</opt>
+    <parm>article</parm>
+  </cmd>
+  ....
+  <env name="document">
+    Hello, <group><cmd name="it"/>World</group>!
+  </env>
+</TeXML>

@@ -1,0 +1,159 @@
+<TeXML>
+<!-- -->
+<cmd name="documentclass">
+  <opt>12pt</opt>
+  <parm>letter</parm>
+</cmd>
+
+<env name="=================" nl2="0" nl3="0"/>
+
+<TeXML>\section{No&#xa0;break}</TeXML>
+
+<env name="=================" nl2="0" nl3="0"/>
+
+<TeXML>&#x422;&#x435;&#x425;</TeXML>
+
+<env name="=================" nl2="0" nl3="0"/>
+
+<cmd name="documentclass">
+  <opt>12pt</opt>
+  <parm>letter</parm>
+</cmd>
+
+<env name="=================" nl2="0" nl3="0"/>
+
+... Visit <cmd name="href">
+  <parm>TeXML homepage</parm>
+  <parm>http://getfo.org/texml/</parm></cmd> ...
+
+<env name="=================" nl2="0" nl3="0"/>
+
+...
+<cmd name="item"/>first
+<cmd name="item"/>second
+<cmd name="item" nl1="1"/>third
+<cmd name="item" nl1="1" nl2="1"/>fourth ...
+
+<env name="=================" nl2="0" nl3="0"/>
+
+<cmd name="it"/> once, <cmd name="it" gr="0"/> twice
+
+<env name="=================" nl2="0" nl3="0"/>
+
+<env name="document">
+...
+</env>
+
+<env name="=================" nl2="0" nl3="0"/>
+
+<env name="list" begin="start" end="finish">
+...
+</env>
+
+<env name="=================" nl2="0" nl3="0"/>
+
+... one <env name="fake">env</env>, another <env
+name="fake" nl1="0" nl2="0" nl3="0" nl4="0">env</env>, etc.
+
+<env name="=================" nl2="0" nl3="0"/>
+
+<group><cmd name="it" gr="0"/>italics</group>
+
+<env name="=================" nl2="0" nl3="0"/>
+
+<math>a+b</math>
+<dmath><cmd name="sqrt"><parm>2</parm></cmd></dmath>
+
+<env name="=================" nl2="0" nl3="0"/>
+
+<ctrl ch=" "/>
+
+<env name="=================" nl2="0" nl3="0"/>
+
+<spec cat="bg"/><spec cat="esc"/>it italics<spec cat="eg"/>
+
+<env name="=================" nl2="0" nl3="0"/>
+
+<TeXML>$a \/\/ $b</TeXML>
+
+<env name="=================" nl2="0" nl3="0"/>
+
+<cmd name="def" gr="0"/><cmd name="textvert"><parm><math>|</math></parm></cmd>
+
+<env name="=================" nl2="0" nl3="0"/>
+
+<TeXML ws="1">&#xa1; &#x27F5;
+<math>&#xa1; &#x27F5;</math></TeXML>
+
+<env name="=================" nl2="0" nl3="0"/>
+
+<TeXML><cmd name="def" gr="0"/><cmd name="ensuretext">
+  <parm><cmd name="textrm" gr="0"/></parm> </cmd></TeXML>
+
+<env name="=================" nl2="0" nl3="0"/>
+
+--, ---, ``, '', !` and ?`
+
+<env name="=================" nl2="0" nl3="0"/>
+
+<TeXML escape="0">$a \/\/ $b</TeXML>
+
+<env name="=================" nl2="0" nl3="0"/>
+
+<TeXML>
+  text mode here: |&#x302;
+  <TeXML mode="math">
+    math mode here: |&#x302;
+    <TeXML mode="text">text in math in text: |&#x302;</TeXML>
+    again math mode: |&#x302;
+  </TeXML>
+  again text mode: |&#x302;
+</TeXML>
+
+<env name="=================" nl2="0" nl3="0"/>
+
+<TeXML>
+<TeXML>
+  <group>
+    <cmd name="it"/> text
+  </group>
+</TeXML>
+<TeXML ws="1">
+  <group>
+    <cmd name="it"/> text
+  </group>
+</TeXML>
+</TeXML>
+
+<env name="=================" nl2="0" nl3="0"/>
+
+... here. <spec cat="nl"/> More, ...
+
+<env name="=================" nl2="0" nl3="0"/>
+
+<TeXML>
+   One line<spec cat="nl"/>
+<spec cat="space"/><spec cat="space"/>Another line<spec cat="nl"/>
+   Last line
+</TeXML>
+
+<env name="=================" nl2="0" nl3="0"/>
+
+<TeXML>
+line
+line
+also
+<spec cat="nil"/>
+line
+</TeXML>
+
+<env name="=================" nl2="0" nl3="0"/>
+
+<TeXML>
+two nl:  [<spec cat="nl"/><spec cat="nl"/>]
+two nl?: [<spec cat="nl?"/><spec cat="nl?"/>]
+</TeXML>
+
+<env name="=================" nl2="0" nl3="0"/>
+
+</TeXML>

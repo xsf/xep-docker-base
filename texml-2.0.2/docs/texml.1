@@ -1,0 +1,26 @@
+.TH texml 1  "April 16, 2006" "version 2.0"
+.SH NAME
+texml \- Serialize TeXML to TeX (LaTeX, ConTeXt)
+.SH SYNOPSIS
+.B texml
+[ \fIoptions\fR ] \fIinputfile\fR \fIoutputfile\fR
+.SH DESCRIPTION
+Convert TeXML file \fIinputfile\fR to TeX file \fIoutfile\fR. The special file name "\fI\-\fR" means the standard input or standard output, correspondingly.
+.TP
+\fB\-w\fR, \fB\-\-width\fR \fIwidth\fR
+If possible, split long lines on smaller ones of the desired width.
+.TP
+\fB\-e\fR, \fB\-\-encoding\fR \fIencoding\fR
+Output encoding. Should be known to the Python codecs. Default is ASCII.
+.TP
+\fB\-a\fR, \fB\-\-ascii\fR
+Use only ASCII symbols for output. Non-ASCII bytes are escaped using the \fB^^XX\fR form, where \fBXX\fR is a hexadecimal code of the character.
+.TP
+\fB\-c\fR, \fB\-\-context\fR
+Activate ConTeXt support.
+.SH AUTHOR
+Oleg Parashchenko <olpa@users.sourceforge.net>
+.SH SEE ALSO
+http://getfo.org/texml/
+
+http://uucode.com/blog/category/texml/

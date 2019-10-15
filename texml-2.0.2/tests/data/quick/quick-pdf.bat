@@ -1,0 +1,2 @@
+pdflatex quick.tex
+pause

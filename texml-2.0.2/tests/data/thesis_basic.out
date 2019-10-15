@@ -1,0 +1,4 @@
+\documentclass[a4paper]{minimal}
+\begin{document}
+Eto~\textemdash{} primer.
+\end{document}

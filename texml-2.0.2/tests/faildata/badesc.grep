@@ -1,0 +1,2 @@
+Invalid XML 0, 1:
+Value of boolean attribute 'escape' is not '0' or '1', but 'x0'

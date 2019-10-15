@@ -1,0 +1,7 @@
+<TeXML xmlns="http://getfo.sourceforge.net/texml/ns1">
+trademark symbol: &#x2122;
+windows&#x2122; outside
+// Some time ago it was mapped to 'windows\texttrademark  outside'.
+// As result, words 'windows' and 'outside' were not divided by a space.
+// Now we use '{}' instead of space, so this test is just a reminder.
+</TeXML>

@@ -1,0 +1,5 @@
+trademark symbol: \texttrademark{}
+windows\texttrademark{} outside
+// Some time ago it was mapped to 'windows\textbackslash{}texttrademark  outside'.
+// As result, words 'windows' and 'outside' were not divided by a space.
+// Now we use '\{\}' instead of space, so this test is just a reminder.

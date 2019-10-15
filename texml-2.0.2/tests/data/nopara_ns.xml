@@ -1,0 +1,14 @@
+<TeXML xmlns="http://getfo.sourceforge.net/texml/ns1">
+One line.
+
+Second line.
+
+Third line.
+
+
+
+
+
+All previous lines
+should belong to one paragraph.
+</TeXML>

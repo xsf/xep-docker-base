@@ -1,0 +1,22 @@
+<TeXML>
+	<TeXML><ctrl ch=" "/>  </TeXML>
+	<TeXML><ctrl ch=" "/>  </TeXML>
+
+	
+	<!-- 
+	:    Originally a space after command was not weak.
+	:    But now I decided that weak space is better,
+	:    just because 'x\it  y' makes 'xy' in LaTeX, not 'x y'
+	-->
+	<TeXML><group><cmd name="it"/>  it</group>  </TeXML>
+	<TeXML><ctrl ch=" "/>  </TeXML>
+
+	
+	<!-- Automatic line brealing here-->
+	<spec cat="nl"/>
+	<TeXML><cmd name="aaaaaaaaaa"/> <cmd name="aaaaaaaaaa"/> <cmd name="aaaaaaaaaa"/> <cmd name="aaaaaaaaaa"/> <cmd name="aaaaaaaaaa"/> <cmd name="aaaaaaaaaa"/> </TeXML>
+	<!-- And no automatic line breaking here -->
+	<spec cat="nl"/>
+	<TeXML ws="1"><cmd name="aaaaaaaaaa"/> <cmd name="aaaaaaaaaa"/> <cmd name="aaaaaaaaaa"/> <cmd name="aaaaaaaaaa"/> <cmd name="aaaaaaaaaa"/> <cmd name="aaaaaaaaaa"/> </TeXML>
+	
+</TeXML>

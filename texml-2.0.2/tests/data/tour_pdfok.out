@@ -1,0 +1,8 @@
+\documentclass{article}
+\usepackage[T2A]{fontenc}
+\usepackage[koi8-r]{inputenc}
+\usepackage[unicode]{hyperref}
+\begin{document}
+\section[ \texorpdfstring{Заголовок (Title)}{\004\027\004\060\004\063\004\076\004\073\004\076\004\062\004\076\004\072\000\040\000\050\000\124\000\151\000\164\000\154\000\145\000\051}
+]{Заголовок (Title)} Текст (Text)
+\end{document}

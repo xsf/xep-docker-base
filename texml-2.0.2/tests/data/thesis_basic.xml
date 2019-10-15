@@ -1,0 +1,9 @@
+<TeXML>
+ <cmd name="documentclass">
+  <opt>a4paper</opt>
+  <parm>minimal</parm>
+ </cmd>
+ <env name="document">
+  Eto&#xa0;&#x2014; primer.
+ </env>
+</TeXML>

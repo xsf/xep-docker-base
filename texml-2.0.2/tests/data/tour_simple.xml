@@ -1,0 +1,11 @@
+<TeXML>
+<TeXML escape="0">
+\documentclass[a4paper]{article}
+\usepackage[latin1]{inputenc}
+\usepackage[T1]{fontenc}
+</TeXML>
+<env name="document">
+I'm not afraid of the symbols
+$, ^, > and others.
+</env>
+</TeXML>
